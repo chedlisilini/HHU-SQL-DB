@@ -1,0 +1,19 @@
+sqlite3 Version 3.40.0 
+Kritische Punkte:
+1. Spezialist hat mindestens ein fachlicher Kompetenz.
+     Entwickler beherscht mindestens eine Programmiersparache.
+     Sind nicht effizent implementierbar:
+     wir können ein Trigger erstellen, nach jeder Eingabe neuer Spezialist (bzw. Entwickler),
+     wird er einen generellen fachlicher Kompetenz  (bzw. Programmiersparache). Die Lösung 
+     wäre aber nicht optimal.
+     Wir können die später bei der Umsetzung der dazugehörigen Rest API von user verlangen 
+     mindestens einen fachlicher komptenz (bzw. Programmiersparache) für jeden Spezialist
+     (bzw. Entwickler) zu geben. Sonst wird die Anfrage nicht zum Database weitergeleitet. 
+
+2. Ein  Spezialist ist entweder ein Designer oder ein Entwickler. 
+     das können wir genauso nur im Rest API implemtieren.   
+
+
+
+
+Chedhli silini

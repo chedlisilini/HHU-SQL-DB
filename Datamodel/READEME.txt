@@ -1,0 +1,26 @@
+Chedhli Silini       --------------Blatt1-------------------
+
+Kritische Punkte:
+
+Bei nicht explizit eingegebenen Infomationen, meine Inmpelemtierung habe ich:
+Projektleiter kann beliebig viele Projekte leiten oder gar keinen: [0,*]
+
+
+Bewertung ist eine Entität die eine Bepunktung und einen optionalen Text hat.
+Optionale Attribute werden einfacher im Datenbank Entwurfe implementiert (nullable vaules)
+hier habe ich Optionaler Text sowie Optionale Alias in eigenen Entitäten Modelliert 
+mit dem kardinalität [0,1] können wir sicher sein dass es Optional bleibt.
+Ein Designer hat maximal einen Alias
+Eine Bewertung hat maximal einen Text
+
+
+Im ER Diagram können wir nicht "Entweder Oder" implementieren. 
+In meiner Entwurf: 
+Ein Entwickler ist ein Spezialist 
+Ein Designer ist ein Spezialist
+Daher Ein Spezialist kann ein Entwickler oder ein Designer sein aber auch keiner von beiden (Disjunkt Partiell)
+Was es einer optimale Lösung zum "Entweder oder", die trozdem verletzt werden kann.  
+
+
+Ein Spezialist kann Mentor für viele andere Spezialisten sein ---> (ist Mentor) [0,*]
+Ein Spezialist kann maximal ein Mentor haben ---> (hat Mentor) [0,1]
